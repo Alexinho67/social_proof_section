@@ -1,0 +1,218 @@
+/* Colors
+    Primary
+        Very Dark Magenta: hsl(300, 43%, 22%) 
+        Soft Pink: hsl(333, 80%, 67%)
+
+    Neutral
+        Dark Grayish Magenta: hsl(303, 10%, 53%) 
+        Light Grayish Magenta: hsl(300, 24%, 96%) 
+        White: hsl(0, 0%, 100%)
+
+Typography
+    Body Copy
+        Font size: 15px
+    Font
+        Family: Spartan
+        Weights: 400, 500, 700 */
+
+
+
+:root {
+    /* Primary */
+    --VeryDarkMagenta: hsl(300, 43%, 22%) ;
+    --SoftPink: hsl(333, 80%, 67%);
+    /* Neutral */
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta:hsl(300, 24%, 96%);
+    --WhiteNew: hsl(0, 0%, 100%);
+
+}   
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+body{
+    /* outline: 0.5px solid #333; */
+    margin:0;
+    padding:0;
+    font-family:'Spartan', sans-serif;
+    font-size: 13px;
+    background-color: var(--WhiteNew);
+    max-width:1200px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5rem;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+                     url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top, bottom;
+}
+main{
+    padding:1px;
+}
+h1{
+    font-weight: 900;
+    font-size: 260%;
+    line-height: 2.3rem;
+    color: var(--VeryDarkMagenta);
+    /* color:red; */
+}
+
+h2{
+    color: var(--VeryDarkMagenta);
+    font-weight: 900;
+    font-size: 260%;
+    line-height: 2.3rem;
+}
+
+
+.flexcontainer{
+    display:flex;
+    justify-content: space-between;
+    /* outline: 2px dashed black; */
+    margin-bottom: 2rem;
+    padding-top:10px;
+}
+.titleBox{
+    /* outline: 0.5px solid #444; */
+    width: 43ch;
+    /* background-color: var(--WhiteNew); */
+    margin:1rem 1rem;
+}
+
+.titleBox p{
+    font-size: 15px;
+}
+
+
+.ratingBox{
+    /* outline: 0.5px solid #444; */
+    width: 45ch;
+    margin:1rem 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    /* outline: 2px dotted red; */
+}
+
+.rating{
+    width:350px;
+    /* display: inline; */
+    border-radius: 8px;
+    /* background-color: #777 ; */
+    background-color:var(--LightGrayishMagenta);
+    padding-left:1rem;
+}
+.rating:nth-child(1){
+    margin-right: auto;
+}
+.rating:nth-child(2){
+    margin-left: auto;
+    margin-right: auto;
+}
+.rating:nth-child(3){
+    margin-left: auto;
+}
+
+.stars{
+    display: inline;
+}
+
+.rating image{
+    vertical-align: middle;
+}
+
+/* .rating:nth-child(1){
+    text-align: left;
+}
+.rating:nth-child(2){
+    text-align: center;
+}
+.rating:nth-child(3){
+    text-align: right;
+} */
+
+.reviewBox{
+    /* display:flex; */
+    background-color: var(--VeryDarkMagenta);
+    color: var(--LightGrayishMagenta);
+    margin:1rem 1rem;
+    border-radius: 10px;
+    padding: 20px 30px 2rem 30px;
+}
+
+.reviewBox:nth-child(1){
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.reviewBox:nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* background-color:black; */
+}
+
+.reviewBox:nth-child(3){
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    /* background-color: #333; */
+}
+
+.profile_img{
+    display:inline;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.review_title p{
+    display: inline-block;
+}
+
+.reviewer_name{
+    font-weight: 700;
+}
+
+.reviewer_position{
+    color: var(--DarkGrayishMagenta);
+}
+
+@media (max-width: 780px){
+    body{
+        /* background-color: #fa0;
+        background-image: none; */
+        max-width: 80%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h1, .titleBox,.ratingBox{
+        text-align: center;
+    }
+
+    .flexcontainer{
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .titleBox,.ratingBox {
+        width:100%;
+    }
+
+    .rating {
+        text-align: center!important;
+        margin:1rem auto;
+        width: 100%;
+    }
+    .stars{
+        display: block;
+    }
+
+
+}
