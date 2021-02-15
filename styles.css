@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
 /* Colors
     Primary
         Very Dark Magenta: hsl(300, 43%, 22%) 
@@ -39,7 +41,7 @@ body{
     /* outline: 0.5px solid #333; */
     margin:0;
     padding:0;
-    font-family:'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif;
     font-size: 13px;
     background-color: var(--WhiteNew);
     max-width:1200px;
@@ -57,31 +59,23 @@ main{
     padding:1px;
 }
 h1{
-    font-weight: 900;
-    font-size: 260%;
+    font-weight: 700;
+    font-size: 2.5rem;
     line-height: 2.3rem;
     color: var(--VeryDarkMagenta);
     /* color:red; */
 }
 
-h2{
-    color: var(--VeryDarkMagenta);
-    font-weight: 900;
-    font-size: 260%;
-    line-height: 2.3rem;
-}
-
-
 .flexcontainer{
+    /* outline: 2px dashed black; */
     display:flex;
     justify-content: space-between;
-    /* outline: 2px dashed black; */
     margin-bottom: 2rem;
     padding-top:10px;
 }
 .titleBox{
     /* outline: 0.5px solid #444; */
-    width: 43ch;
+    width: 60ch;
     /* background-color: var(--WhiteNew); */
     margin:1rem 1rem;
 }
@@ -93,7 +87,7 @@ h2{
 
 .ratingBox{
     /* outline: 0.5px solid #444; */
-    width: 45ch;
+    width: 60ch;
     margin:1rem 1rem; 
     display: flex;
     flex-direction: column;
@@ -103,6 +97,8 @@ h2{
 }
 
 .rating{
+    font-weight:700;
+    color:var(--VeryDarkMagenta);
     width:350px;
     /* display: inline; */
     border-radius: 8px;
@@ -171,6 +167,7 @@ h2{
 }
 
 .review_title p{
+    font-weight: 500;
     display: inline-block;
 }
 
@@ -209,6 +206,8 @@ h2{
         text-align: center!important;
         margin:1rem auto;
         width: 100%;
+        padding-left:0;
+        padding-right:0;
     }
     .stars{
         display: block;
